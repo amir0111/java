@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="541.0" style="-fx-background-color: #044a4d;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScrabblepointController">
+   <children>
+      <TextField fx:id="display" layoutX="219.0" layoutY="191.0" onAction="#onclick" prefHeight="28.0" prefWidth="121.0" style="-fx-border-color: green; -fx-border-style: 20;" />
+      <Button fx:id="submit" layoutX="216.0" layoutY="255.0" mnemonicParsing="false" onAction="#onclick" style="-fx-background-color: green;" text="Submit your word" textFill="#b1c4c3">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Label fx:id="errormsg1" layoutX="219.0" layoutY="230.0" prefHeight="25.0" prefWidth="578.0" textFill="#e83504">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label layoutX="161.0" layoutY="14.0" text="Scrabble point System:" textFill="#08bd71">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="11.0" layoutY="55.0" prefHeight="107.0" prefWidth="521.0" style="-fx-background-color: #dff2f2;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="19.0" prefWidth="81.0" text="A=1" textFill="#0bdf83b2" GridPane.columnIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="87.0" layoutY="9.0" prefHeight="19.0" prefWidth="81.0" text="B=3" textFill="#0bdf83b2" GridPane.columnIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="164.0" layoutY="9.0" prefHeight="19.0" prefWidth="81.0" text="C=3" textFill="#0bdf83b2" GridPane.columnIndex="3">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="241.0" layoutY="9.0" prefHeight="19.0" prefWidth="81.0" text="D=2" textFill="#0bdf83b2" GridPane.columnIndex="4">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="370.0" layoutY="9.0" prefHeight="19.0" prefWidth="81.0" text="E=1" textFill="#0bdf83b2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="35.0" prefHeight="28.0" prefWidth="89.0" text="F=4" textFill="#0bdf83b2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="35.0" prefHeight="28.0" prefWidth="89.0" text="G=2" textFill="#0bdf83b2" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="190.0" layoutY="35.0" prefHeight="28.0" prefWidth="89.0" text="H=4" textFill="#0bdf83b2" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="280.0" layoutY="35.0" prefHeight="28.0" prefWidth="89.0" text="I=1" textFill="#0bdf83b2" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="370.0" layoutY="35.0" prefHeight="28.0" prefWidth="89.0" text="J=8" textFill="#0bdf83b2" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="460.0" layoutY="35.0" prefHeight="28.0" prefWidth="89.0" text="K=5" textFill="#0bdf83b2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="61.0" prefHeight="28.0" prefWidth="89.0" text="L=1" textFill="#0bdf83b2" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="28.0" prefWidth="89.0" text="M=3" textFill="#0bdf83b2" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="190.0" layoutY="61.0" prefHeight="28.0" prefWidth="89.0" text="N=1" textFill="#0bdf83b2" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="61.0" prefHeight="28.0" prefWidth="89.0" text="O=1" textFill="#0bdf83b2" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="370.0" layoutY="61.0" prefHeight="28.0" prefWidth="89.0" text="P=3" textFill="#0bdf83b2" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="460.0" layoutY="61.0" prefHeight="28.0" prefWidth="89.0" text="Q=10" textFill="#0bdf83b2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="87.0" prefHeight="30.0" prefWidth="71.0" text="R=1" textFill="#0bdf83b2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="87.0" prefHeight="28.0" prefWidth="89.0" text="S=1" textFill="#0bdf83b2" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="190.0" layoutY="87.0" prefHeight="28.0" prefWidth="89.0" text="T=1" textFill="#0bdf83b2" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="280.0" layoutY="87.0" prefHeight="28.0" prefWidth="89.0" text="U=1" textFill="#0bdf83b2" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="370.0" layoutY="87.0" prefHeight="28.0" prefWidth="89.0" text="V=4" textFill="#0bdf83b2" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="460.0" layoutY="87.0" prefHeight="28.0" prefWidth="89.0" text="W=4" textFill="#0bdf83b2" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="113.0" prefHeight="28.0" prefWidth="89.0" text="X=8" textFill="#0bdf83b2" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="190.0" layoutY="113.0" prefHeight="28.0" prefWidth="89.0" text="Y=4" textFill="#0bdf83b2" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="280.0" layoutY="113.0" prefHeight="28.0" prefWidth="89.0" text="Z=10" textFill="#0bdf83b2" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Label layoutX="113.0" layoutY="196.0" text="Submit your word:" textFill="#10d673" />
+      <Label fx:id="score" layoutX="357.0" layoutY="196.0" text="0.00" textFill="#fffb00" />
+      <Label layoutX="14.0" layoutY="14.0" text="Home" textFill="#00f93a" />
+      <Label layoutX="221.0" layoutY="313.0" text="Previous words: " textFill="#5acf83" />
+   </children>
+</AnchorPane>
